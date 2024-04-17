@@ -7,7 +7,7 @@
 {% else %}
 {% assign site_base_url = 'https://owasp.org/www--site-theme/' %}
 {% endif %} -->
-assign site_base_url = {{site.remote_theme}}
+{% assign site_base_url = {{site.remote_theme}} %}
 {% if page.document %}
 {% assign title = page.document | append: ' | ' %}
 {% assign title = title | append: page.title %}
