@@ -1,12 +1,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% assign default_desc = page.title | append: ' on the main website for The OWASP Foundation. OWASP is a nonprofit foundation that works to improve the security of software.' %}
-{% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
+<!-- {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
 {% if dev_file.size > 0 %}
 {% assign site_base_url = '/' %}
 {% else %}
 {% assign site_base_url = 'https://owasp.org/www--site-theme/' %}
-{% endif %}
+{% endif %} -->
+{% assign site_base_url = 'https://{{site.github.url}}/www--site-theme/' %}
 
 {% if page.document %}
 {% assign title = page.document | append: ' | ' %}
