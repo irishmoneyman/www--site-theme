@@ -7,7 +7,7 @@
 {% else %}
 {% assign site_base_url = 'https://owasp.org/www--site-theme/' %}
 {% endif %} -->
-{% assign site_base_url = 'https://{{site.github.url}}/www--site-theme/' %}
+{% assign site_base_url = site.github.url | append: '/www--site-theme/' %}
 
 {% if page.document %}
 {% assign title = page.document | append: ' | ' %}
