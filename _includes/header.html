@@ -48,12 +48,12 @@
     <div><a href="https://owasp.org/membership" class="cta-button">Join</a></div>
   </div>
 {% assign dev_file = site.static_files | where: "name", "devsite.txt" %}
-<!-- {% if dev_file.size > 0 %}
+{% if dev_file.size > 0 %}
 {% assign site_base_url = '/' %}
 {% else %}
 {% assign site_base_url = 'https://owasp.org/www--site-theme/' %}
-{% endif %} -->
-{% assign site_base_url = 'https://codeload.github.com/ | append: site.remote_theme %}
+{% endif %}
+<!-- {% assign site_base_url = 'https://codeload.github.com/ | append: site.remote_theme %} -->
 
 <script type="text/javascript">
   $(function(){
